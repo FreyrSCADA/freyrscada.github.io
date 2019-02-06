@@ -1,1 +1,416 @@
-//test
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="sfFrontendHtml" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+<title>FreyrSCADA Embedded Solution</title>
+<meta name="author" content="FreyrSCADA Embedded Solution">
+<meta name="publisher" content="FreyrSCADA Embedded Solution">
+<meta name="copyright" content="FreyrSCADA Embedded Solution">
+<meta name="language" content="en">
+<meta name="robots" content="index,follow">
+<meta name="description" content="We provide solutions for Substation Automation protocols including IEC 60870-5-104, DNP3, IEC 60870-5-101, MODBUS, IEC 60870-5-103, DLMS-COSEM source code libraries, test tools and simulators.">
+<meta name="keywords" content="DNP3, Modbus, SCADA, IEC 60870, 870-5, IEC 104, IEC 101, IEC 102, IEC 103, IEEE 1815,
+                                                           104, IEC104, IEC 104, IEC-104, 870-5-104, IEC870-5-104, IEC-870-5-104, IEC 870-5-104, IEC60870-5-104, IEC-60870-5-104, IEC 60870-5-104, IEC60870, IEC 60870, 
+                               101, IEC101, IEC 101, IEC-101, 870-5-101, IEC870-5-101, IEC-870-5-101, IEC 870-5-101, IEC60870-5-101, IEC-60870-5-101, IEC 60870-5-101, 
+                                                           103, IEC103, IEC 103, IEC-103, 870-5-103, IEC870-5-103, IEC-870-5-103, IEC 870-5-103, IEC60870-5-103, IEC-60870-5-103, IEC 60870-5-103,
+                                                           dnp, dnp3, Distibuted network protocol, Dnp3 Elements Communicate, Dnp3 Layered Communication, Dnp3 Tutorial, Remote Monitoring DNP3 (Distributed Network Protocol),  DNP3, DNP, DNP 3.0, DNP3, power, energy, electrical, power monitoring, electricity, Distributed Network Protocol (DNP3), IEEE 1815, master station, substation automation, 1815-2012, IEEE 1815-2012
+                                                           dlms,dlms/cosem,iec 62056,meter protocol,metering source code,bis companion standards,dlms companion standard,obis code,dlms hdlc,dlms zigbee,dlms library,62056-21, Modbus support, Modbus I/O, Modbus products, Control Solutions, modbus, modbus test, modbus simulation, modbus rtu, modbus simulator
+                                                           ">
+<meta name="image" content="http://freyrscada.com/images/fsbanner.jpg"/>
+
+<link type="text/css" rel="stylesheet" href="http://www.freyrscada.com/css/font-awesome.min.css" media="all">
+<link href="http://freyrscada.com/css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<script type='text/javascript' src="http://www.freyrscada.com/scripts/jquery.min.js"></script>
+<script type='text/javascript' src="http://www.freyrscada.com/scripts/jquery.backtotop.js"></script>
+<script type='text/javascript' src="http://www.freyrscada.com/scripts/jquery.mobilemenu.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="http://www.freyrscada.com/favicon.ico">
+
+
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="FreyrSCADA Embedded Solution"/>
+<meta itemprop="description" content="We provide solutions for Substation Automation protocols including IEC 60870-5-104, DNP3, IEC 60870-5-101, MODBUS, IEC 60870-5-103, DLMS-COSEM source code libraries, test tools and simulators."/>
+<meta itemprop="image" content="http://freyrscada.com/images/fsbanner.jpg"/>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" >
+<meta name="twitter:title" content="FreyrSCADA Embedded Solution - IEC 60870-5-104, IEC 60870-5-101, DNP3"/>
+<meta name="twitter:description" content="We provide solutions for Substation Automation protocols including IEC 60870-5-104, DNP3, IEC 60870-5-101, MODBUS, IEC 60870-5-103, DLMS-COSEM source code libraries, test tools and simulators."/>
+<meta name="twitter:site" content="@FreyrScada"/>
+<meta name="twitter:creator" content="FreyrScada"/>
+<meta name="twitter:player" content="https://www.youtube.com/c/FreyrscadaEmbeddedSolution/featured"/>
+<meta name="twitter:image" content=" http://freyrscada.com/images/freyrscada-logo200x200.jpg" />
+
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta property="og:title" content="FreyrSCADA Embedded Solution"/>
+<meta property="og:description" content="We provide solutions for Substation Automation protocols including IEC 60870-5-104, DNP3, IEC 60870-5-101, MODBUS, IEC 60870-5-103, DLMS-COSEM source code libraries, test tools and simulators."/>
+<meta property="og:image" content="http://freyrscada.com/images/freyrscada-logo200x200.jpg" />
+<meta property="og:url" content="http://www.freyrscada.com" />
+<meta property="og:site_name" content="FreyrSCADA Embedded Solution - IEC 60870-5-104, IEC 60870-5-101, DNP3"/>
+<meta property="og:video" content="http://www.freyrscada.com/vid/IEC60870-5-104.mp4"/>
+<meta property="og:type" content="article"/>
+<link rel="canonical" href="https://freyrscada.github.io/" />
+
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" /><meta name="rating" content="general" />
+<meta name="googlebot" content="index, follow"/>
+<meta name="SLURP" content="index, follow" />
+<meta name="Googlebot-News" content="index, follow">
+
+
+
+
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "FreyrSCADA Embedded Solution",
+  "url": "http://freyrscada.com",
+ 
+  "logo": {
+        "@type": "ImageObject",
+        "url": "http://freyrscada.com/images/FreyrSCADA-logo.png",
+        "width": 180,
+        "height": 160
+    },
+  
+  "image": "http://freyrscada.com/images/fsbanner.jpg",
+  "description": "FreyrSCADA Embedded Solution is dealing with Substation automation protocol, embedded systems, We have the products like windows based Simulator, development kit, Protocol Source Code Libraries for Windows, Linux, PowerPC, QNX !\nProducts:\nIEC 60870-5-104\nIEC 60870-5-101\nIEC 60870-5-103\nDNP3\nIEC 62056 DLMS-COSEM\nModbus& more.\nFor any Specific requirement, Contact us!",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91 9710684366",
+   "contactType" : "customer service",
+	"email": "mailto:contact@freyrscada.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "TamilNadu, India",
+    "postalCode": "625531",
+    "streetAddress": "No.5, BommaiyaSamy Kovil Street, Theni"
+  },
+  "telephone": "+91 9710684366",
+    	"sameAs" : [ "https://www.facebook.com/FreyrSCADA",
+    "https://twitter.com/FreyrScada",
+    
+	"https://www.linkedin.com/company/freyr-scada-&-embedded-solution",
+	"https://www.youtube.com/c/FreyrscadaEmbeddedSolution"]
+}
+ </script>
+ 
+<script type='application/ld+json'>  
+ {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "http://freyrscada.com",
+    "name": "FreyrSCADA Embedded Solution",
+	 "author": {
+      "@type": "Person",
+      "name": "Sharan"
+    },
+  "description": "We provide solutions for Substation Automation protocols including IEC 60870-5-104, DNP3, IEC 60870-5-101, MODBUS, IEC 60870-5-103, DLMS-COSEM source code libraries, test tools and simulators.",
+  "publisher": "FreyrSCADA"
+}
+</script>
+
+
+
+ 
+
+ 
+</head>
+<body id="top">
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('http://www.freyrscada.com/images/12.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+<div id="logo" class="fl_left">
+        <h1><a href="http://www.freyrscada.com/">FreyrSCADA Embedded Solution</a></h1>
+      </div>
+
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          
+          <li><a href="http://www.freyrscada.com/about-us.html">About-Us</a></li>
+          <li><a class="drop" href="http://www.freyrscada.com/products.html">Products</a>
+            <ul>
+              <li><a href="http://www.freyrscada.com/iec-60870-5-104.php">IEC 60870-5-104</a></li>
+              <li><a href="http://www.freyrscada.com/iec-60870-5-101.php">IEC 60870-5-101</a></li>
+              <li><a href="http://www.freyrscada.com/iec-60870-5-103.php">IEC 60870-5-103</a></li>
+              <li><a href="http://www.freyrscada.com/dnp3-ieee-1815.php">DNP3</a></li>
+              <li><a href="http://www.freyrscada.com/iec-62056-dlms-cosem.php">IEC 62056 DLMS-COSEM</a></li>
+              <li><a href="http://www.freyrscada.com/modbus.php">Modbus</a></li>
+            </ul>
+          </li>
+        
+          <li><a href="http://www.freyrscada.com/contact-us.php">Contact</a></li>
+		  <li><a class="fa fa-file-pdf-o" href="docs/FreyrSCADAEmbeddedSolution-IEC104-IEC101-DNP3.pdf">PDF</a></li>
+		  
+       
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <!-- ################################################################################################ -->
+
+<!-- End Top Background Image Wrapper -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <section id="pageintro" class="hoc clear" style="text-align:center">
+    <div style="text-align:center"> 
+        
+        
+        <h5 >All Your Substation Automation Protocol, Smart Metering, AMR Needs!</h5>
+
+      <!-- ################################################################################################ -->
+      
+     
+      <p style="font-size:20px">
+            IEC 60870-5-101, 103, 104<BR>
+                         DNP3 <BR>
+			 Modbus<BR>
+			 DLMS-COSEM Client( IEC 62056 )<BR>
+                         
+            
+      </p>
+      <footer><a class="btn" href="http://www.freyrscada.com/products.html">FIND OUT MORE</a></footer>
+      <!-- ################################################################################################ -->
+    </div>
+   </section> 
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper overlay coloured">
+  <section class="hoc container clear" style="text-align:center"> 
+
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle" style="text-align:center">
+      <h4 class="heading">We've got, What You Need!</h4>
+      <br>
+	  
+      <p style="font-size:20px"> FreyrSCADA Embedded Solution is dealing with Substation Automation Protocols and Embedded Systems.
+          <br><br>We have the products like Windows based Simulator, Development kit, Protocol Drivers(dll, lib), Source Code Libraries, Protocol Stack for Windows, Linux, PowerPC, QNX !</p>
+      <br>
+      <a style="font-size:30px" href="http://www.freyrscada.com/docs/FreyrSCADAEmbeddedSolution-IEC104-IEC101-DNP3.pdf">Brochure</a>
+    </div>
+
+
+    
+  
+  
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle" style="text-align:center">
+    <br>
+    <br>
+      <h6 class="heading">Products</h6>
+      
+    </div>
+    <div class="group excerpts">
+      <article class="one_third first">
+        
+        <figure><a href="http://www.freyrscada.com/iec-60870-5-104.php"><img src="http://www.freyrscada.com/images/104w320x220.jpg" alt="IEC 60870-5-104"></a></figure>
+        
+        
+      </article>
+      <article class="one_third">
+        
+        <figure><a href="http://www.freyrscada.com/iec-60870-5-101.php"><img src="http://www.freyrscada.com/images/101w320x220.jpg" alt="IEC 60870-5-101"></a></figure>
+        
+        
+      </article>
+      <article class="one_third">
+        
+        <figure><a href="http://www.freyrscada.com/iec-60870-5-103.php"><img src="http://www.freyrscada.com/images/103w320x220.jpg" alt="IEC 60870-5-103"></a></figure>
+       
+        
+      </article>
+      
+   
+
+          
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+    
+        <div class="content"> 
+            
+            <br>
+            
+            <br>
+      
+      </div>
+    
+    <div class="clear"></div>
+    
+    <div class="group excerpts">
+            
+      
+      <article class="one_third first">
+        
+        <figure><a href="http://www.freyrscada.com/dnp3-ieee-1815.php"><img src="http://www.freyrscada.com/images/dnpwebicon320x220.jpg" alt="DNP3"></a></figure>
+       
+        
+      </article>
+      <article class="one_third">
+        
+        <figure><a href="http://www.freyrscada.com/modbus.php"><img src="http://www.freyrscada.com/images/modbuswebicon320x220.jpg" alt="MODBUS"></a></figure>
+       
+        
+      </article>
+
+     <article class="one_third">
+        
+        <figure><a href="http://www.freyrscada.com/iec-62056-dlms-cosem.php"><img src="http://www.freyrscada.com/images/dlmswebicon320x220.jpg" alt="IEC 62056 DLMS COSEM"></a></figure>
+       
+        
+      </article>
+
+
+      
+    </div>
+  </main>
+</div>
+
+<div class="wrapper overlay coloured" style="text-align:center">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <ul id="stats" class="nospace group">
+      <li class="one_quarter first" style="text-align:center" ><a><i class="fa fa-3x fa-cogs"></i></a>
+        <p>Fast Deployment </p>
+        <p>2 weeks</p>
+		</li>
+      <li class="one_quarter" style="text-align:center" ><a><i class="fa fa-3x fa-comments-o"></i></a>
+        <p> Ultimate Customer Support</p>
+        <p> </p>
+      </li>
+      <li class="one_quarter" style="text-align:center"><a><i class="fa fa-3x fa-usd"></i></a>
+        <p>cost effective</p>
+        <p> </p>
+        
+      </li>
+      <li class="one_quarter" style="text-align:center"><a><i class="fa fa-3x fa-smile-o"></i></a>
+        <p>Happy Customers</p>
+        <p>486+</p>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+
+<div class="wrapper row4 bgded overlay" style="background-image:url('http://www.freyrscada.com/images/header.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      
+      <article><a href="http://www.freyrscada.com/index.html">
+		  <img class="btmspace-15" src="http://www.freyrscada.com/images/fsbanner.jpg" alt="FreyrSCADA" width="294"></a>
+       
+      </article>
+
+      <nav>
+        <ul class="nospace">
+          <li><a href="http://www.freyrscada.com/index.html"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="http://www.freyrscada.com/about-us.html">About</a></li>
+          <li><a href="http://www.freyrscada.com/contact-us.php">Contact</a></li>    
+          <li><a href="http://www.freyrscada.com/sitemap.html">Sitemap</a></li>
+        </ul>
+      </nav>
+	   <article>
+			  <div id="google_translate_element"></div><script type="text/javascript">
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				}
+				</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		</article>
+    </div>
+    <div class="one_third">
+       <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          No.5, BommaiyaSamy Kovil Street, 
+		  Annanji, Theni – 625531, 
+		  TamilNadu, India.
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i>+91 9710684366 </li>
+        
+        <li><i class="fa fa-envelope-o"></i> <a href="mailto:contact@freyrscada.com">contact@freyrscada.com</a></li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/FreyrSCADA"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com/FreyrScada"><i class="fa fa-twitter"></i></a></li>       
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/company/freyr-scada-&-embedded-solution"><i class="fa fa-linkedin"></i></a></li>
+        
+        <li><a class="faicon-youtube-play" href="https://www.youtube.com/c/FreyrscadaEmbeddedSolution"><i class="fa fa-youtube-play"></i></a></li>
+		<li><a class="faicon-vimeo" href="https://vimeo.com/freyrscada"><i class="fa fa-vimeo"></i></a></li>
+		<li><a class="faicon-pinterest-square" href="https://in.pinterest.com/FreyrSCADA/"><i class="fa fa-pinterest-square"></i></a></li>
+		<li><a class="faicon-rss" href="http://freyrscada.business.site/"><i class="fa fa-rss"></i></a></li>
+		<li><a class="faicon-skype" href="skype:freyrscada?chat"><i class="fa fa-skype"></i></a></li>
+
+	 </ul>
+    </div>
+    <div class="one_third">
+     
+      <article>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502798.01926592406!2d77.28632843462015!3d10.090111148390868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0714a5e31e88db%3A0x4b04b865342726d0!2sFreyr+SCADA+%26+Embedded+Solution!5e0!3m2!1sen!2sin!4v1473170741969" width="400" height="300"  style="border:0" allowfullscreen>
+		</iframe>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="http://freyrscada.com/">FreyrSCADA</a></p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+
+<!-- JAVASCRIPTS -->
+<script src="http://www.freyrscada.com/scripts/jquery.min.js"></script>
+<script src="http://www.freyrscada.com/scripts/jquery.backtotop.js"></script>
+<script src="http://www.freyrscada.com/scripts/jquery.mobilemenu.js"></script>
+
+</body>
+</html>
