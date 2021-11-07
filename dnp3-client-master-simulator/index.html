@@ -36,7 +36,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "DNP3-Protocol",
+  "brand": {
+        "@type": "Brand",
+        "name": "DNP3-Protocol"
+      },
   "name": "DNP3 Client / Master Simulator",
   "image": "https://freyrscada.github.io/dnp3-client-master-simulator/dnpclientsimlogo_thump.jpg",
   "description": "simulate independent 50 client master nodes in the simulator and support all functionalities of dnp3 Protocol including file transfer",
@@ -66,8 +69,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best DNP3 solution - easy to test with our RTU products",
       "name": "Value purchase",
       "reviewRating": {

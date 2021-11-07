@@ -43,7 +43,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 101",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-101-Protocol"
+         },
   "name": "IEC 60870-5-101 Client Simulator",
   "image": "https://freyrscada.github.io/iec-101-client-simulator/iec101clientsimlogo_thump.jpg",
   "description": "simulate independent 50 client nodes in the simulator and support all functionalities of IEC 101 Protocol including iec 101 file transfer",
@@ -73,8 +76,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 101 solution - easy to test with our RTU products",
       "name": "Value purchase",
       "reviewRating": {

@@ -56,7 +56,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 104",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-104-Protocol"
+         },
   "name": "IEC 60870-5-104 Protocol Library Windows Software Development Kit(SDK) stack",
   "image": "https://freyrscada.github.io/iec-60870-5-104-windows-sdk/104w320x220_win_sdk.jpg",
   "description": "Supports all Windows version . IEC 60870-5-104 Windows Software Development Kit(SDK) features - Context-based event-driven model ,Supports Background Scan, Cyclic Data Transmission, Double Transmission, Redundancy and File transfer, Supports Select-Before-Operate and Direct-Execute command execution modes, File transfer... ",
@@ -86,8 +89,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 104 solution - easy to integrate with our HMI products",
       "name": "Value purchase",
       "reviewRating": {

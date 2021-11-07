@@ -30,7 +30,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "DNP3 Protocol",
+  "brand": {
+        "@type": "Brand",
+        "name": "DNP3-Protocol"
+      },
   "name": "DNP3 Protocol Source Code Library (SCL) Stack",
   "image": "https://freyrscada.github.io/dnp3-source-code-library/dnpwebicon320x220.jpg",
   "description": "DNP3 Source Code Library supports Windows, Linux, PowerPC, QNX and more. Low memory footprint, easy start on any hardware platform, can operate with or without an operating system, delivered as a source code, high configurability allows to use required features only, royalty-free licensing.",
@@ -60,8 +63,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best DNP3 solution - easy to integrate with our RTU and HMI products",
       "name": "Value purchase",
       "reviewRating": {

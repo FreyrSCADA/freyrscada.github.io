@@ -55,7 +55,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 104",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-104-Protocol"
+         },
   "name": "IEC 60870-5-104 Server Simulator",
   "image": "https://freyrscada.github.io/iec-104-server-simulator/iec104serversimlogo_thump.jpg",
   "description": "simulate independent 50 server nodes in the simulator and support all functionalities of IEC 60870-5-104 Protocol including iec 104 file transfer",
@@ -85,8 +88,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 104 solution - easy to test with our RTU products",
       "name": "Value purchase",
       "reviewRating": {

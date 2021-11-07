@@ -43,7 +43,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 104",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-104-Protocol"
+         },
   "name": "IEC 104 Source Code Library (SCL) Stack",
   "image": "https://freyrscada.github.io/iec-104-source-code-library/IEC-60870-5-104-source-code-library-stack.jpg",
   "description": "IEC 104 Source Code Library supports Windows, Linux, PowerPC, QNX and more. Low memory footprint, easy start on any hardware platform, can operate with or without an operating system, delivered as a source code, high configurability allows to use required features only, royalty-free licensing.",
@@ -73,8 +76,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 104 solution - easy to integrate with our RTU and HMI products",
       "name": "Value purchase",
       "reviewRating": {

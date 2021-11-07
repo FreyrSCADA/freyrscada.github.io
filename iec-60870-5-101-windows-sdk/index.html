@@ -43,7 +43,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 101",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-101-Protocol"
+         },
   "name": "IEC 60870-5-101 Protocol Library Windows Software Development Kit(SDK) stack",
   "image": "https://freyrscada.github.io/iec-60870-5-101-windows-sdk/101w320x220_win_sdk.jpg",
   "description": "Supports all Windows version . IEC 60870-5-101 Windows Software Development Kit(SDK) features - support Balanced and unbalanced, Context-based event-driven model ,Supports Background Scan, Cyclic Data Transmission, Double Transmission, Redundancy and File transfer, Supports Select-Before-Operate and Direct-Execute command execution modes... ",
@@ -73,8 +76,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 101 solution - easy to integrate with our HMI products",
       "name": "Value purchase",
       "reviewRating": {

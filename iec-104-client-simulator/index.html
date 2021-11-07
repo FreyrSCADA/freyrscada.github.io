@@ -42,7 +42,10 @@
          {
          "@context": "http://www.schema.org",
          "@type": "product",
-         "brand": "IEC 104",
+         "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-104-Protocol"
+         },
          "name": "IEC 60870-5-104 Master Client Simulator",
          "image": "https://freyrscada.github.io/iec-104-client-simulator/iec104clientsimlogo_thump.jpg",
          "description": "Simulate independent upto 50 Client node in the simulator and support all functionalities of IEC 60870-5-104 Protocol  master / client including iec104 file transfer",
@@ -72,9 +75,12 @@
          "review": [
          {
          "@type": "Review",
-         "author": "Panasonic Singapore",
-         "datePublished": "2019-01-25",
-         "description": "Best iec 104 solution - easy to test with our RTU products",
+         "author": {
+		"@type": "Person",
+		"name": "Panasonic Singapore"
+		},
+		"datePublished": "2021-01-25",
+		"description": "Best iec 104 solution - easy to test with our RTU products",
          "name": "Value purchase",
          "reviewRating": {
          "@type": "Rating",

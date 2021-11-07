@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>IEC 60870-5-101 Source code Library Stack</title>
 	
-    <meta name="author" content="FreyrSCADA Embedded Solution">
-	
+ 	
 	<meta name="author" content="FreyrSCADA Embedded Solution">
 <meta name="publisher" content="FreyrSCADA Embedded Solution">
 <meta name="copyright" content="FreyrSCADA Embedded Solution">
@@ -39,8 +38,11 @@
 {
   "@context": "http://www.schema.org",
   "@type": "product",
-  "brand": "IEC 101",
-  "name": "IEC 101 Source Code Library (SCL) Stack",
+  "brand": {
+        "@type": "Brand",
+        "name": "IEC-60870-5-101-Protocol"
+         },
+  "name": "IEC 101 Source Code Library Stack",
   "image": "https://freyrscada.github.io/iec-101-source-code-library/IEC-60870-5-101-source-code-library-stack.jpg",
   "description": "IEC 101 Source Code Library supports Windows, Linux, PowerPC, QNX and more. Low memory footprint, easy start on any hardware platform, can operate with or without an operating system, delivered as a source code, high configurability allows to use required features only, royalty-free licensing.",
   "aggregateRating": {
@@ -69,8 +71,11 @@
 	"review": [
     {
       "@type": "Review",
-      "author": "Panasonic Singapore",
-      "datePublished": "2019-01-25",
+      "author": {
+      "@type": "Person",
+      "name": "Panasonic Singapore"
+      },
+      "datePublished": "2021-01-25",
       "description": "Best iec 101 solution - easy to integrate with our RTU and HMI products",
       "name": "Value purchase",
       "reviewRating": {
